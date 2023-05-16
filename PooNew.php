@@ -27,11 +27,11 @@ abstract class Barcos{
     }
 
     public function getInfo() : void{
-        echo "El barco tiene $this->eslora eslora, y tiene capacidad de: $this->capacidad";
+        echo "El barco tiene $this->eslora eslora, y tiene capacidad de:  $this->capacidad";
     }
 
     public function getEslora(): void{
-        echo "El barco tiene $this->eslora eslora";
+        echo "El barco tiene $this->eslora de eslora";
     }
 }
 
@@ -45,13 +45,13 @@ class Lancha extends Barcos{
     }
 
     public function getInfo() : void{
-        echo "La lancha tiene $this->eslora eslora, capacidad de: $this->capacidad y $this->defensas defensas, y el tipo es: " . parent::$tipo;
+        echo "La lancha tiene $this->eslora de eslora, capacidad de: $this->capacidad y $this->defensas defensas, y el tipo es: " . parent::$tipo;
     }
 }
 
 class Yate extends Barcos{
     public function getInfo() : void{
-        echo "El yate tiene $this->eslora eslora, capacidad de: $this->capacidad";
+        echo "El yate tiene $this->eslora de eslora, capacidad de: $this->capacidad";
     }
 }
 
@@ -64,7 +64,7 @@ echo "<br>";
 $Lancha->getColor();
 echo "<br>";
 echo "<hr>";
-$Yate = new Yate(60,10, "gris");
+$Yate = new Yate(60,10, "blanco");
 $Yate->getInfo();
 echo "<br>";
 $Yate->getColor();
